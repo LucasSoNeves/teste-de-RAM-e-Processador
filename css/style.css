@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(213, 210, 210);
+}
+
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    background-image: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+                      linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+                      linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+
+header h1{
+    text-align: center;
+    color: white;
+}
+
+header h2{
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.controls{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    background-image: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+                      linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+                      linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.control{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button{
+    cursor: pointer;
+    background-color: lightgreen;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button:first-of-type{
+    margin-top: 10px;
+}
+
+input[type='number'], #obj_num{
+    border: 1px dashed black;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+}
+
+.tela_das_bolinhas{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    min-height: fill-available; /*A altura do bloco contendo menos margem horizontal, borda e preenchimento.*/
+    min-height: -webkit-fill-available;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: absolute;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.ball{
+    position: absolute;
+    border-radius: 100px;
+}

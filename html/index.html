@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../favcon/favicon.ico" type="image/x-icon">
+    <title>Teste de RAM</title>
+</head>
+<body>
+    <header>
+        <h1>Teste o consumo de RAM <br> e uso do seu processador</h1>
+        <h2>O consumo de ambos crescerá de acordo <br> com o número de bolinhas</h2>
+    </header>
+    <hr>
+    <main>
+        <div id="controls" class="controls">
+            <div class="control">
+                <label>Número de bolinhas</label>
+                <p id="obj_num">0</p>
+            </div>
+            <div class="control">
+                <label>Adicionar bolinhas</label>
+                <input type="number" value="0" min="0" id="qnt_txt">
+                <button id="add_btn">Adicionar</button>
+            </div>
+            <div class="control">
+                <button id="btn_remove">Remover todas</button>
+            </div>
+        </div>
+        <div class="tela_das_bolinhas" id="tela_das_bolinhas"></div>
+    </main>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
